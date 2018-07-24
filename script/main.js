@@ -1,11 +1,13 @@
-let squares = 20;
+let squares = 14;
 
 function makeSquares(squares) {
-  let container = document.querySelector('.grid-container');
-  for (var i = 0; i < i; i++) {
-    const square = document.createElement('div');
-    gridcontainer.appendChild(square);
+  let container = document.querySelector('.gridcontainer');
+
+  for (i = 0; i < squares * squares; i++) {
+    const box = document.createElement('div');
+    container.appendChild(box);
+    box.classList.add('box');
   }
 }
 
-makeSquares();
+makeSquares(squares);
