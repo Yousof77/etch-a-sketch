@@ -8,6 +8,7 @@ function makeSquares(squares) {
     container.appendChild(box);
     box.classList.add('box');
   }
+  container.setAttribute('style',`grid-template-columns: repeat(${squares}, auto)`);
 }
 
 makeSquares(squares);

@@ -2,6 +2,13 @@
   margin: 0;
   background-color: #f5f5f5;
 }
+
+#wrapper {
+  background-color: #D00018;
+  margin: 0 auto;
+  height: 900px;
+  width: 900px;
+}
 .box {
   align-items: center;
   background-color: #fff;
@@ -12,9 +19,10 @@
   width: auto;
 }
 .gridcontainer {
-  grid-template-columns: repeat(16, auto);
+  /*grid-template-columns: repeat(16, auto);*/
   height: 800px;
   width: 800px;
   position: relative;
   display: grid;
+  margin: 0 auto;
 }
