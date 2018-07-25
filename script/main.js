@@ -8,7 +8,17 @@ function makeSquares(squares) {
     container.appendChild(box);
     box.classList.add('box');
   }
-  container.setAttribute('style',`grid-template-columns: repeat(${squares}, auto)`);
+  container.setAttribute('style', `grid-template-columns: repeat(${squares}, auto)`);
 }
 
 makeSquares(squares);
+
+function hoverColor() {
+  let hover = document.querySelectorAll('.box');
+  hover.forEach((box) => {
+    box.addEventListener('mouseover', () => {
+      box.setAttribute('style', `background-color: black`)
+    })
+  });
+}
+hoverColor();
