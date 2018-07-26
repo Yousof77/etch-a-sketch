@@ -11,7 +11,6 @@ function makeSquares(squares) {
   container.setAttribute('style', `grid-template-columns: repeat(${squares}, auto)`);
 }
 
-makeSquares(squares);
 
 function hoverColor() {
   let hover = document.querySelectorAll('.box');
@@ -21,4 +20,21 @@ function hoverColor() {
     })
   });
 }
+
+function clearField() {
+  document.getElementById("grid").innerHTML = "";
+}
+
+function reset() {
+  let button = document.querySelector('#reset');
+  button.addEventListener('click', () => {
+  let howMany = window.prompt('How many squares?');
+    clearField();
+    makeSquares(howMany);
+    hoverColor();
+  });
+}
+
+makeSquares(squares);
+reset();
 hoverColor();
