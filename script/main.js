@@ -28,7 +28,7 @@ function clearField() {
 function reset() {
   let button = document.querySelector('#reset');
   button.addEventListener('click', () => {
-  let howMany = window.prompt('How many squares?');
+  let howMany = window.prompt('How many squares per side?');
     clearField();
     makeSquares(howMany);
     hoverColor();

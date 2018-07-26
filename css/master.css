@@ -6,9 +6,19 @@
 #wrapper {
   background-color: #D00018;
   margin: 0 auto;
-  height: 900px;
-  width: 900px;
+  height: 920px;
+  width: 920px;
   border-radius: 1%
+}
+
+#reset {
+  height: 60px;
+  width: 60px;
+  margin: 2px 0 2px 5px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  border-radius: 100%;
+  border-style: ridge;
 }
 
 .box {
